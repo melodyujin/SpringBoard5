@@ -1,0 +1,27 @@
+package org.sp.springapp.controller.admin;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class AdminController {
+
+	//로그인폼 요청처리
+	@GetMapping("/admin/loginform")
+	public ModelAndView loginform() {
+		ModelAndView mav = new ModelAndView("admin/loginform");
+		return mav;
+	}
+	
+	//로그인 요청처리
+	@PostMapping("/admin/login")
+	public ModelAndView login() {
+		//3단계 : 일치하는 관리자가 있는지 조회
+		
+		//4단계 : 일치하는 관리자가 있다면, 세션에 DTO를 담아서 서비스해준다
+		
+		return null;
+	}
+}

@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=C\:\\Spring_dev\\eGovFrameDev-3.10.0-64bit\\workspace\\SpringBoard\\.git;C\:\\Spring_dev\\eGovFrameDev-3.10.0-64bit\\workspace\\SpringBoard2\\.git;C\:\\Spring_dev\\eGovFrameDev-3.10.0-64bit\\workspace\\spring0910\\.git;C\:\\Spring_dev\\eGovFrameDev-3.10.0-64bit\\workspace\\SpringBoard1\\.git;
+GitRepositoriesView.GitDirectories.relative=SpringBoard\\.git;SpringBoard2\\.git;spring0910\\.git;SpringBoard1\\.git;
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

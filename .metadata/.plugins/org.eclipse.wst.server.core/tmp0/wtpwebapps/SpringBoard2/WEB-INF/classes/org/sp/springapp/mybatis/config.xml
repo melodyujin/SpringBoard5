@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="org.sp.springapp.domain.Gallery" alias="Gallery"/>
+		<typeAlias type="org.sp.springapp.domain.GalleryImg" alias="GalleryImg"/>
+		<typeAlias type="org.sp.springapp.domain.Admin" alias="Admin"/>
+	</typeAliases>
+	<!--  JNDI를 스프링이 주도해서 커넥션을 얻기 때문에 mybatis에서는 더이상 커넥션을 얻지 않음
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="JNDI">
+				<property name="data_source" value="java:comp/env/jdbc/spring" />
+			</dataSource>
+		</environment>
+	</environments>
+	-->
+	
+	<mappers>
+		<mapper resource="org/sp/springapp/mybatis/GalleryMapper.xml" />
+		<mapper resource="org/sp/springapp/mybatis/GalleryImgMapper.xml" />
+		<mapper resource="org/sp/springapp/mybatis/AdminMapper.xml" />
+	</mappers>
+</configuration>

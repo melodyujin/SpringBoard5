@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 관리자와 관련된 빈을 등록할 수 있는 스프링 설정 파일 -->
+
+	<!-- 어떤 하위 컨트롤러가 해당 요청을 처리하게 될지 결정 -->
+	<bean id="handlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+	
+	<!-- 하위 컨트롤러가 반환환 뷰의 이름을 이용하여 완전한 jsp의 경로를 분석하는 자 등록  -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:prefix="/WEB-INF/views/"
+		p:suffix=".jsp"/>
+	
+</beans>

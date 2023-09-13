@@ -1,0 +1,18 @@
+package org.sp.springapp.model.admin;
+
+import org.sp.springapp.domain.Admin;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class AdminServiceImpl implements AdminService{
+	@Autowired
+	private AdminDAO adminDAO;
+	
+	@Override
+	public Admin login(Admin admin) {
+		Admin dto =adminDAO.login(admin);
+		if(dto==null) {
+			throw new 관리자로그인실패예외();
+		}
+		return null;
+	}
+}
